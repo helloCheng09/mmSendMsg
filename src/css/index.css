@@ -1,0 +1,350 @@
+@import 'common.css';
+/*********发送通知 index.html***********/
+#guanliIndex {
+  display: flex;
+  flex-direction: column;
+}
+#guanliIndex .form-item .col-item:nth-of-type(1) {
+  margin-bottom: 6px;
+}
+#guanliIndex .form-item .col-item:nth-of-type(3) {
+  margin-bottom: 10px;
+}
+#guanliIndex .form-item .select-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  line-height: 40px;
+  background-color: #fff;
+}
+#guanliIndex .form-item .select-title::after {
+  border-color: #808080;
+}
+#guanliIndex .form-item .right-t {
+  display: inline-block;
+  line-height: 40px;
+}
+#guanliIndex .form-item .right-t .img-b {
+  display: inline-block;
+  width: 16px;
+  vertical-align: middle;
+}
+#guanliIndex .form-item .right-t img {
+  display: block;
+  width: 100%;
+}
+#guanliIndex .form-item .hid-list {
+  background-color: #fff;
+}
+#guanliIndex .form-item .select-item {
+  display: flex;
+  margin: 0 16px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+}
+#guanliIndex .form-item .select-item::after {
+  border-color: #808080;
+}
+#guanliIndex .form-item .item-b {
+  line-height: 40px;
+  height: 40px;
+}
+#guanliIndex .form-item label {
+  display: inline-block;
+  vertical-align: middle;
+}
+#guanliIndex .form-item .radio-b .teacher-radio {
+  display: none;
+}
+#guanliIndex .form-item .rht-icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+#guanliIndex .form-item .icon-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+#guanliIndex .form-item .ipt-tit {
+  padding: 0 16px;
+  background-color: #fff;
+}
+#guanliIndex .form-item .ipt-tit .ipt-b::after {
+  border-color: #808080;
+}
+#guanliIndex .form-item .ipt-tit textarea {
+  height: 40px;
+  line-height: 1;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 6px;
+  border: none;
+  outline-color: #3784fa;
+}
+#guanliIndex .form-item .xiu-b {
+  min-height: 300px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+#guanliIndex .form-item .btn-b {
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+#guanliIndex .form-item .btn-b .btn-item {
+  display: inline-block;
+  padding: 4px 18px;
+  line-height: 1;
+  border-radius: 20px;
+}
+#guanliIndex .form-item .btn-b input {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+#guanliIndex .form-item .btn-b .ok {
+  line-height: 24px;
+  color: #fff;
+  background-color: #3784fa;
+}
+#guanliIndex .form-item .btn-b .btn-item::before {
+  border-radius: 40px;
+  border-color: #808080;
+}
+#guanliIndex .form-item .btn-b .ok::before {
+  border-color: #3784fa !important;
+}
+#guanliIndex .main-tz-list {
+  flex: 1;
+  background-color: #fff;
+}
+#guanliIndex .main-tz-list .msg-item {
+  padding: 10px 0;
+  margin: 0 16px;
+}
+#guanliIndex .main-tz-list .msg-item::after {
+  border-color: #808080;
+}
+#guanliIndex .main-tz-list .item-link {
+  display: flex;
+  align-items: center;
+}
+#guanliIndex .main-tz-list .left-item {
+  position: relative;
+  display: inline-block;
+  flex: 1px;
+}
+#guanliIndex .main-tz-list .left-item .top-l {
+  display: inline-block;
+  width: 100%;
+}
+#guanliIndex .main-tz-list .left-item .top-l .text {
+  display: inline;
+  font-size: 20px;
+  line-height: 1.4;
+}
+#guanliIndex .main-tz-list .left-item .bot-l .des-text {
+  display: inline;
+  line-height: 1.4;
+  color: #808080;
+}
+#guanliIndex .main-tz-list .right-item {
+  width: 100px;
+}
+#guanliIndex .main-tz-list .right-item .text-read {
+  text-align: center;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #3784fa;
+}
+#guanliIndex .main-tz-list .right-item .text-time {
+  text-align: center;
+  line-height: 1.4;
+  color: #808080;
+}
+/*********管理员 通知详情 detail_msg.html***********/
+#msgDetWrap .main-list .main-item::after {
+  border-color: #808080;
+}
+#msgDetWrap .main-list .main-item:first-child {
+  height: 50px;
+}
+#msgDetWrap .main-list .main-item:last-child {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  transition: height 200ms linear;
+}
+#msgDetWrap .main-list .main-item {
+  margin: 0 15px;
+  padding: 10px 0;
+  position: relative;
+}
+#msgDetWrap .main-list .main-item .dt-text span {
+  display: inline-block;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #808080;
+}
+#msgDetWrap .main-list .item-lf {
+  width: 100%;
+  margin-right: 15px;
+}
+#msgDetWrap .main-list .item-rt {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  text-align: center;
+}
+#msgDetWrap .main-list .item-rt .img-b {
+  display: inline-block;
+  width: 16px;
+  vertical-align: middle;
+}
+#msgDetWrap .main-list .item-rt img {
+  display: block;
+  width: 100%;
+}
+#msgDetWrap .main-list .hid-bx {
+  margin-top: 6px;
+}
+#msgDetWrap .main-list .hid-bx .con-bx p {
+  width: 100%;
+  text-indent: 1em;
+  word-wrap: break-word;
+  white-space: initial;
+  line-height: 18px;
+  padding-bottom: 2px;
+  color: #808080;
+}
+#msgDetWrap .col-item {
+  background-color: #fff;
+}
+#msgDetWrap .col-item .ck-b .ck-tt {
+  line-height: 35px;
+  height: 35px;
+  padding: 0 15px;
+}
+#msgDetWrap .col-item .ck-b .ck-tt::after {
+  border-color: #808080;
+}
+#msgDetWrap .col-item .ck-main-p .ck-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+#msgDetWrap .col-item .ck-main-p .ck-item .img-b {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+#msgDetWrap .col-item .ck-main-p .ck-item .img-b img {
+  display: block;
+  width: 100%;
+}
+#msgDetWrap .col-item .ck-main-p .ck-item .ck-time .time-text {
+  line-height: 1.4;
+  font-size: 16px;
+  color: #808080;
+}
+#msgDetWrap .col-item:nth-of-type(2) {
+  margin-top: 10px;
+}
+/*********教师 通知详情 detail_msg_teacher.html***********/
+#tcMsgDet .col-item {
+  background-color: #fff;
+}
+#tcMsgDet .col-item .ck-b .ck-tt {
+  line-height: 35px;
+  height: 35px;
+  padding: 0 15px;
+}
+#tcMsgDet .col-item .ck-b .ck-tt::after {
+  border-color: #808080;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link {
+  display: flex;
+  padding: 10px 15px;
+  align-items: flex-end;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .main-item-lf {
+  flex: 1;
+  width: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-lf {
+  display: inline-block;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-rt {
+  display: inline-block;
+  width: 75%;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .main-item-rt .item-time {
+  padding-bottom: 4px;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .main-item-rt span {
+  font-size: 14px;
+  color: #808080;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name {
+  display: flex;
+  align-items: center;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name .name-text {
+  line-height: 2;
+  margin-right: 10px;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name .ifchecked {
+  height: 20px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name .ifchecked .text {
+  padding: 0 4px;
+  font-size: 14px;
+  color: #fff;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name .blue {
+  background-color: #3784fa;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-name .grey {
+  background-color: #a0a0a0;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .img-b {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .img-b img {
+  display: block;
+  width: 100%;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-con {
+  display: inline-block;
+  width: 100%;
+  vertical-align: text-top;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-con .con-text {
+  display: inline-block;
+  width: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #808080;
+}
+#tcMsgDet .col-item .ck-b .ck-list .ck-item .detail-link .ck-con .con-text span {
+  display: inline-block;
+  width: 90%;
+}

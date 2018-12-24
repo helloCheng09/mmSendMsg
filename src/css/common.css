@@ -1,0 +1,72 @@
+@import 'StyleDepend/mReset.css';
+/*********主页***********/
+.pub-wrap {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+/*********发通知 头部选择标签***********/
+.index-header {
+  display: inline-block;
+  line-height: 44px;
+  background-color: #3784fa;
+}
+.index-header .tag-b {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.index-header .tag-item:first-child .tag-text {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 8px;
+  padding: 8px 19px;
+  line-height: 1;
+  color: #fff;
+}
+.index-header .tag-item:last-child .tag-text {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 8px;
+  padding: 8px 19px;
+  line-height: 1;
+  color: #fff;
+}
+.index-header .select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #3784fa !important;
+}
+.index-header .tag-item::before {
+  border-color: #fff;
+}
+.index-header .tag-item:first-child::before {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+}
+.index-header .tag-item:nth-of-type(2)::before {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*********通知详情 header***********/
+.msg-header {
+  line-height: 44px;
+  background-color: #3784fa;
+}
+.msg-header .hd-text {
+  text-align: center;
+  color: #fff;
+}
+/*********通知详情 banner***********/
+.top-banner .banner-b {
+  position: relative;
+  height: 160px;
+}
+.top-banner .banner-b .banner-pic {
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #e9e9e9;
+}

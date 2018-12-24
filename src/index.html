@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发送通知</title>
+    <link rel="stylesheet" href="./css/index.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="http://xiumi.us/connect/ue/v5/xiumi-ue-v5.css">
+    <script type='text/javascript' src="./js/JsDepend/swiper.min.js"></script>
+</head>
+
+<body>
+
+    <div class="pub-wrap" id="guanliIndex">
+        <header class="index-header">
+            <div class="panel-choice">
+                <div class="tag-b">
+                    <span class="tag-item m_screen_tag  mob_1px">
+                        <!-- <a href="#">
+                            <div class="tag-text  select">
+                                发送通知
+                            </div>
+                        </a> -->
+                        <div class="btn-bx">
+                            <!-- <img src= alt=""> -->
+                        </div>
+                    </span>
+                    <span class="tag-item m_screen_tag  mob_1px">
+                        <!-- <a href="#">
+                            <div class="tag-text ">
+                                通知记录
+                            </div>
+                        </a> -->
+                        <div class="btn-bx">
+                            <!-- <img src= alt=""> -->
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-screen" style="display:block;">
+            <div class="form-b">
+                <form action="" method="" class="form-item">
+                    <section class="col-item">
+                        <div class="top-select">
+                            <div class="select-title mob_1px_b">
+                                <div class="left-t">
+                                    <div class="text-b">接收人</div>
+                                </div>
+                                <div class="right-t">
+                                    <span class="img-b">
+                                        <img src="./img/packup@3x.png">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="select-hid">
+                                <div class="hid-b">
+                                    <ul class="hid-list">
+                                        <li class="select-item select_bar">
+                                            <div class="item-b">
+                                                <label for="teacher">所有教师</label>
+                                                <div class="radio-b">
+                                                    <input type="radio" name="teacher" value="1" checked class='teacher-radio'>
+                                                </div>
+                                            </div>
+                                            <div class="rht-icon">
+                                                <img class='icon-item default_icon' src="./img/default@3x.png" style="display:none;">
+                                                <img class='icon-item select_icon' src="./img/selected@3x.png">
+                                            </div>
+                                        </li>
+                                        <li class="select-item select_bar">
+                                            <div class="item-b">
+                                                <label for="teacher">所有班主任</label>
+                                                <div class="radio-b">
+                                                    <input type="radio" name="teacher" value="2" class='teacher-radio'>
+                                                </div>
+                                            </div>
+                                            <div class="rht-icon">
+                                                <img class='icon-item default_icon' src="./img/default@3x.png">
+                                                <img class='icon-item select_icon' src="./img/selected@3x.png" style="display:none;">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-item">
+                        <div class="ipt-tit ">
+                            <!-- <span class="input-place">请输入标题</span> -->
+                            <div class="ipt-b mob_1px_b">
+                                <textarea name="title" class="textarea-item" id='text_one' cols="" rows="" placeholder="请输入标题"></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-item">
+                        <div class="xiu-b">
+                            <div class="col-sm-9 col-xs-10 baidu-box">
+                                <script id="container" name="content" type="text/plain"></script>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-item">
+                        <div class="btn-b">
+                            <div class="btn-item mob_1px">
+                                <input type="button" value="取消">
+                            </div>
+                            <!-- <div class="btn-item ok mob_1px"> -->
+                            <input class="btn-item ok mob_1px" type="submit" value="确认发送">
+                            <!-- </div> -->
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-screen main-tz-list" style="display:none;">
+            <div class="msg-list-b">
+                <ul class="msg-list">
+                    <li class="msg-item mob_1px_b" data-id='1'>
+                        <a href="#" class="item-link">
+                            <div class="left-item one-ellipsis">
+                                <div class="top-l  one-ellipsis">
+                                    <div class="text">
+                                        标题1111111111111111111111111111111111111
+                                    </div>
+                                </div>
+                                <div class="bot-l  one-ellipsis">
+                                    <div class="des-text">
+                                        管理员通知~~~~~~~~~~~~~~~~
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-item">
+                                <div class="top-r">
+                                    <div class="text-read">
+                                        88人查看
+                                    </div>
+                                </div>
+                                <div class="bot-r">
+                                    <div class="text-time">
+                                        2018-12-22
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- js -->
+<!-- 配置文件 -->
+<!-- <script type="text/javascript" src="./js/JsDepend/ueditor.config.js"></script> -->
+<!-- 编辑器源码文件 -->
+<!-- <script type="text/javascript" src="./js/JsDepend/ueditor.all.js"></script> -->
+<!-- 实例化编辑器 -->
+<!-- <script type="text/javascript">
+    var editor = UE.getEditor('container');
+</script> -->
+<script type='text/javascript' src="./js/JsDepend/layui/layui.all.js"></script>
+<script type='text/javascript' src="./js/index.js?t=<?php echo time();?>"></script>

@@ -36,17 +36,21 @@ Delegate.prototype = {
         $(this).find('.select_icon').show()
     },
     submitForm: function () {
+        var ifSubmit = false
         $('form').submit(function () {
-            console.log('提交')
-            console.log($(this).serializeArray())
-            var formIptData = $(this).serializeArray()
-            for (var i = 0; i < formIptData.length; i++) {
-                $.each(formIptData[i], function (index, item) {
-                    if (item == '') {
-                        layer.confirm('请完善通知内容')
-                        return false
-                    }
-                })
+            if(!ifSubmit){
+                console.log('提交')
+                console.log($(this).serializeArray())
+                var formIptData = $(this).serializeArray()
+                for (var i = 0; i < formIptData.length; i++) {
+                    // $.each(formIptData[i], function (index, item) {
+                        if (formIptData[i].value == '') {
+                            layer.confirm('请完善通知内容')
+                            return false
+                        }
+                    // })
+                }
+                ifSubmit = true
             }
             return false
         })
@@ -56,7 +60,9 @@ Delegate.prototype = {
         $('.m_screen_tag').on('click', function () {
             var curIndex = $(this).index()
             if (curIndex != lastIndex) {
-                $('.m_screen_tag').find('.tag-text').toggleClass('select')
+                // $('.m_screen_tag').find('.tag-text').toggleClass('select')
+                $('.m_screen_tag').eq(0).find('.btn-bx img').toggle()
+                $('.m_screen_tag').eq(1).find('.btn-bx img').toggle()
             }
             $('.main-screen').toggle()
             lastIndex = curIndex
